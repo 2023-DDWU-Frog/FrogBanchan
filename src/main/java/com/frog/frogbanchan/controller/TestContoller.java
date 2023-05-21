@@ -90,7 +90,7 @@ public class TestContoller {
 
     @RequestMapping("/react")
     public String reactTest() {
-        return "index.html";
+        return "redirect:/react/index.html";
     }
 
 }
