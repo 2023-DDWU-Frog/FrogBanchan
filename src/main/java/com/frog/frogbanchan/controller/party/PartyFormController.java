@@ -36,12 +36,6 @@ public class PartyFormController {
     public void setFrogBanchan(FrogBanchanFacade frogBanchan) {
         this.frogBanchan = frogBanchan;
     }
-
-    //식구 리스트 조회
-	@RequestMapping("/party/list")
-	public ModelAndView handleRequest() throws Exception {
-		return new ModelAndView("/party/list", "partyList", frogBanchan.findPartyList());
-	}
 	
 	//식구 상세정보 조회
 	@GetMapping("/party/view")
