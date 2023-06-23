@@ -139,6 +139,9 @@ public class ReservationForPlaceContorller {
         modelMap.addAttribute("username", username);
         modelMap.addAttribute("seat", seat);
 
+        if (reservedDay == null) {
+            return "error_page";
+        }
         return RESULT_VIEW_FORPLACE;
     }
 }
